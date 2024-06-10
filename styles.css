@@ -1,0 +1,63 @@
+/* css styles */
+
+.navbar {
+  background-color: #FF4233; /* Navbar background color */
+}
+
+#quarto-content {
+  /*background-color: #674280;*/
+  background-color: #110A34;
+  /*background-image: linear-gradient(to bottom right, #050B25, #110A34);*/
+  background-repeat: no-repeat;
+}
+
+/* Circular image styling */
+.circular-image-container {
+  text-align: center;
+  position: relative;
+  padding: 50px 0; /* Adjust padding to control space around the image */
+  margin-top: 10em;
+  margin-bottom: 10em;
+}
+
+.circular-image {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center using transform */
+  border-radius: 50%;
+  width: 25em; /* Adjust size as needed */
+  height: 25em; /* Adjust size as needed */
+  border: 2px solid white; /* Optional border */
+}
+
+.area-chart-container{
+  margin-bottom: 50px; 
+}
+
+.area-chart-grid-item {
+  /*padding: 10px;*/
+}
+
+.parallax-container {
+  position: relative;
+  padding-top: 25px; /* space b/w welcome message and start of parallax*/
+}
+
+.parallax-image-container {
+  padding-top: 25px;  /*space b/w top of 1st chart and parallax background img*/
+  background-image: url(./images/house_forest_3.jpg); 
+  height: 100%;
+  background-attachment: fixed;
+  opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  /*filter: brightness(1);*/
+}
+
+.parallax-image-container.before{
+  background-color: #FF5733;
+  opacity: 0.3;
+}

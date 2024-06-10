@@ -1,0 +1,23 @@
+---
+title: "Project 1"
+editor: visual
+categories: [Analysis] 
+description: "Project 1 is..."
+---
+
+```{r setup}
+#| warning: false
+#| echo: false
+# library(dplyr)
+# library(gt)
+# library(rvest) # Scraping
+# library(httr) # API calls
+# library(jsonlite)
+```
+
+```{r test}
+
+# url <- "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/steamid=76561197960435530"
+# player_summary <- read_json(url)
+# player_summary
+```

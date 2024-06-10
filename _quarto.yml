@@ -1,0 +1,37 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Michael Rejtig Portfolio"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      #- text: About
+      #  href: about.qmd
+      - text: Projects
+        href: projectsList.qmd
+      - text: Resume
+        href: resume.qmd
+    right: 
+      - icon: linkedin
+        href: https://www.linkedin.com/in/michael-rejtig/
+        target: _blank
+
+format:
+  html:
+    theme: 
+      #dark: vapor
+      light: superhero
+    css: styles.css
+    toc: false
+    # code-tools: true # Throwing error
+    
+# listing: 
+#   - text: "Projects"
+#     href: projectsList.qmd
+
+
+
+

@@ -1,0 +1,219 @@
+---
+#title: "Welcome!"
+image: images/profile_pic_linkedin.jpg
+# about: 
+#   template: trestles
+#   image-width: 15em
+#   image-shape: round
+format:
+  html: 
+    css: styles.css
+---
+
+<div class="circular-image-container">
+  <img src="./images/profile_pic_3.PNG" alt="Profile Picture" class="circular-image">
+</div>
+
+# Welcome!
+
+### Journey forth. Explore my portfolio to learn about my skills, experiences, and interests. Complete your quest by viewing each project. Reach out via LinkedIn or my resume contact information.
+
+<div class="parallax-container">
+  <div class="parallax-image-container">
+  <div class="area-chart-container">
+```{r data experience area chart}
+#| echo: false
+#| warning: false
+library(echarts4r)
+# Import custom theme
+  # obj = fromJSON("./area_chart_portfolio.json")
+
+
+data_experience <- data.frame(
+  Category = c(
+    "Analysis", "Data Exploration", "Data Cleaning", "Dashboards", "Programming", "Reports"
+  ),
+  R = c(4, 4, 5, 3, 4, 4),
+  Excel = c(4, 3, 3, 1, 2, 3),
+  SQL = c(1, 2, 2, 1, 2, 1)
+)
+
+trans <- list(opacity = 0.4) # transparency
+emphasis <- list(itemStyle = list(color = "#C70039", borderWidth = 0))
+
+plot <- data_experience |> 
+  e_charts(Category) |>
+  e_radar(R, max = 5, name = "R", emphasis = emphasis, areaStyle = list(color = "#746D6B", opacity = 0.4), lineStyle = list(width = 6)) |>
+  e_radar(Excel, max = 5, name = "Excel", emphasis = emphasis) |>
+  e_radar(SQL, max = 5, name = "SQL", emphasis = emphasis) |>
+  e_title("Data Experience") |>
+  e_tooltip(trigger = "item") |> 
+  e_radar_opts(
+    #list(
+      #areaStyle = list(color= c(r_color, excel_color, sql_color), opacity = 0.3),
+      lineStyle = list(width = 2)
+      #)
+    ) |> 
+  e_theme_custom('{
+                "color":["#00FEF4","#EC00FE","#FFC300"],
+                "radar_opt":{
+                  "areaStyle":{
+                    "color":["#00FEF4","#EC00FE","#FFC300"]
+                  }
+                },
+                "x_axis":{
+                  "grid": {
+                    "bottom": "80%" 
+                  }
+                },
+                "textStyle":{
+                   "color":"#FFFFFF",
+                   "fontWeight": "bold",
+                   "fontSize": "1.2em",
+                   "textShadowColor": "#000000",
+                   "textShadowBlur": 5,
+                   "textShadowOffsetX": 3,
+                   "textShadowOffsetY": 3
+               },
+               "category":{
+                "textStyle":{
+                  "color": "#FFFFFF",
+                  "fontWeight": "bold",
+                  "fontSize": "1.2em"
+                }
+               },
+               "backgroundColor":"rgba(76, 67, 65, 0)",
+               "legend": {
+                "itemGap": 35,
+                  "textStyle": {
+                    "color": "#FFFFFF" 
+                  }
+               },
+                "title": {
+                  "textStyle": {
+                    "color": "#FFFFFF",
+                    "fontWeight": "bold",
+                    "fontSize": "1.6em"
+                  }
+                }
+               }')
+
+# Display the plot
+plot 
+```
+  </div>
+  <div class="area-chart-container">
+```{r research experience area chart}
+#| echo: false
+#| warning: false
+
+data_research_methods <- data.frame(
+  Category = c(
+    "Experiments", "Surveys", "Ethnography", "Interviewing", "UX", "Clinical Trials"
+  ),
+  Experience = c(5, 4, 1, 5, 2, 2)
+)
+
+trans <- list(opacity = 0.9) # transparency
+exp_emphasis <- list(itemStyle = list(color = "#C70039"))
+
+data_research_methods |> 
+  e_charts(Category) |> 
+  e_radar(Experience, max = 5, itemStyle = trans, emphasis = exp_emphasis, areaStyle = list(color = "#746D6B", opacity = 0.4), lineStyle = list(width = 6)) |> 
+  e_tooltip(trigger = "item") |> 
+  e_title("Research Experience") |> 
+  e_theme_custom('{
+                   "color": "#00FEF4",
+                   "textStyle":{
+                     "color":"#FFFFFF",
+                     "fontWeight": "bold",
+                     "fontSize": "1.2em",
+                     "textShadowColor": "#000000",
+                     "textShadowBlur": 5,
+                     "textShadowOffsetX": 3,
+                     "textShadowOffsetY": 3
+                   },
+                   "category":{
+                    "textStyle":{
+                      "color": "#FFFFFF",
+                      "fontWeight": "bold",
+                      "fontSize": "1.2em"
+                    }
+                   },
+                   "backgroundColor":"rgba(103, 66, 128, 0)",
+                   "legend": {
+                    "itemGap": 25,
+                      "textStyle": {
+                        "color": "#FFFFFF" 
+                      }
+                   },
+                    "title": {
+                      "textStyle": {
+                        "color": "#FFFFFF",
+                        "fontWeight": "bold",
+                        "fontSize": "1.6em"
+                      }
+                    }
+                 }')
+  #e_legend(orient = "vertical", left = "left", top = "middle")
+```
+  </div>
+  <div class="area-chart-container">
+```{r hobbies area chart}
+#| echo: false
+#| warning: false
+
+data_hobbies <- data.frame(
+  Category = c(
+    "Jogging", "Video Games", "Cooking", "Programming", "Streaming", "Writing"
+  ),
+  Enjoyment = c(4, 5, 3, 4, 3, 4)
+)
+
+trans <- list(opacity = 0.9) # transparency
+enjoyment_emphasis <- list(itemStyle = list(color = "#C70039"))
+
+data_hobbies |> 
+  e_charts(Category) |> 
+  e_radar(Enjoyment, max = 5, itemStyle = trans, emphasis = enjoyment_emphasis, areaStyle = list(color = "#746D6B", opacity = 0.4), lineStyle = list(width = 6)) |> 
+  e_tooltip(trigger = "item") |> 
+  e_title("Hobbies") |> 
+  e_theme_custom('{
+                   "color": "#00FEF4",
+                   "textStyle":{
+                     "color":"#FFFFFF",
+                     "fontWeight": "bold",
+                     "fontSize": "1.2em",
+                     "textShadowColor": "#000000",
+                     "textShadowBlur": 5,
+                     "textShadowOffsetX": 3,
+                     "textShadowOffsetY": 3
+                   },
+                   "category":{
+                    "textStyle":{
+                      "color": "#FFFFFF",
+                      "fontWeight": "bold",
+                      "fontSize": "1.2em"
+                    }
+                   },
+                   "backgroundColor":"rgba(255, 87, 51, 0)",
+                   "legend": {
+                    "itemGap": 25,
+                      "textStyle": {
+                        "color": "#FFFFFF" 
+                      }
+                   },
+                    "title": {
+                      "textStyle": {
+                        "color": "#FFFFFF",
+                        "fontWeight": "bold",
+                        "fontSize": "1.6em",
+                        "textDecoration": "underline"
+                      }
+                    }
+                 }')
+  #e_legend(orient = "vertical", left = "left", top = "middle")
+```
+  </div>
+  </div>
+</div>
