@@ -1,8 +1,12 @@
 1. git remote add origin url
+  - git commit -m "Committing local changes before merging"
 2. git branch -M main
 3. git push -u origin main
+
+-overwrite: git push origin main --force
 
 verify remote url: git remote -v
 verify branch: git branch
 
 Tutorial for publishing to github: https://www.youtube.com/watch?v=uimdXPZc40I
+

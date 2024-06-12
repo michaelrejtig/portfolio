@@ -1,9 +1,0 @@
----
-title: "Projects"
-editor: visual
-listing: 
-  type: default
-  contents: projects
-  categories: true
-  fields: [image, title, decription]
----

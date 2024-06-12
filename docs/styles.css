@@ -1,5 +1,6 @@
 /* css styles */
 
+/* WEBSITE - ALL PAGES */
 .navbar {
   background-color: #FF4233; /* Navbar background color */
 }
@@ -11,11 +12,13 @@
   background-repeat: no-repeat;
 }
 
+/* HOME PAGE */
+
 /* Circular image styling */
 .circular-image-container {
   text-align: center;
   position: relative;
-  padding: 50px 0; /* Adjust padding to control space around the image */
+  padding: 25px 0; /* Adjust padding to control space around the image */
   margin-top: 10em;
   margin-bottom: 10em;
 }
@@ -26,8 +29,8 @@
   left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%); /* Center using transform */
   border-radius: 50%;
-  width: 25em; /* Adjust size as needed */
-  height: 25em; /* Adjust size as needed */
+  width: 20em; /* Adjust size as needed */
+  height: 20em; /* Adjust size as needed */
   border: 2px solid white; /* Optional border */
 }
 
@@ -57,7 +60,121 @@
   /*filter: brightness(1);*/
 }
 
+/*
 .parallax-image-container.before{
   background-color: #FF5733;
   opacity: 0.3;
+}
+*/
+
+/* RESUME PAGE */
+
+.resume-image-container {
+    padding-top: 5px;
+    background-image: url(./images/paper3.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    opacity: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.resume-content {
+    color: #000;
+    width: 100%;
+    height: 100%; /* Full viewport height for each section */
+    /*overflow-y: scroll;*/
+    padding: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Papyrus', sans-serif; 
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.resume-content h2 {
+    margin-top: 0;
+}
+
+.resume-content h3 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.resume-section-skills ul {
+  list-style: none; /* Remove default bullets */
+  padding-left: 0;
+}
+
+.resume-section-skills ul li {
+  position: relative;
+  padding-left: 30px; /* Space for the image */
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+.resume-section-skills ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px; /* Adjust size of the image */
+  height: 25px; /* Adjust size of the image */
+  background-image: url(./images/d20_bullet_points2.png); /* Path to your D20 image */
+  background-size: cover;
+}
+
+.resume-section-education ul {
+  list-style: none; /* Remove default bullets */
+  padding-left: 0;
+}
+
+.resume-section-education ul li {
+  position: relative;
+  padding-left: 30px; /* Space for the image */
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+.resume-section-education ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8%;
+  width: 25px; /* Adjust size of the image */
+  height: 25px; /* Adjust size of the image */
+  background-image: url(./images/graduation-hat-2.png); /* Path to your D20 image */
+  background-size: cover;
+}
+
+.resume-section-jobs ul {
+  list-style: none; /* Remove default bullets */
+  padding-left: 0;
+}
+
+.resume-section-jobs ul li {
+  position: relative;
+  padding-left: 30px; /* Space for the image */
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.resume-section-jobs ul li::before {
+  content: "\27A2";
+  position: absolute;
+  left: 0;
+  top: 0;
+  /*transform: translateY(-50%);*/
+  width: 25px; /* Adjust size of the image */
+  height: 25px; /* Adjust size of the image */
+  /*background-image: url(./images/graduation-hat-2.png); /* Path to your D20 image */
+  background-size: cover;
+}
+
+.resume-column {
+  columns: 2;
+  column-gap: 20px; /* Adjust the gap between columns */
 }

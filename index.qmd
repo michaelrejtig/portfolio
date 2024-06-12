@@ -16,7 +16,7 @@ format:
 
 # Welcome!
 
-### Journey forth. Explore my portfolio to learn about my skills, experiences, and interests. Complete your quest by viewing each project. Reach out via LinkedIn or my resume contact information.
+### Journey forth. Explore my portfolio to learn about my skills, experience, and interests. Complete your quest by viewing each project. Reach out via LinkedIn or my resume contact information.
 
 <div class="parallax-container">
   <div class="parallax-image-container">
@@ -61,10 +61,8 @@ plot <- data_experience |>
                     "color":["#00FEF4","#EC00FE","#FFC300"]
                   }
                 },
-                "x_axis":{
-                  "grid": {
-                    "bottom": "80%" 
-                  }
+                "grid": {
+                  "top": "10%" 
                 },
                 "textStyle":{
                    "color":"#FFFFFF",
@@ -84,6 +82,8 @@ plot <- data_experience |>
                },
                "backgroundColor":"rgba(76, 67, 65, 0)",
                "legend": {
+                "top": "10%",
+                "left": "0%",
                 "itemGap": 35,
                   "textStyle": {
                     "color": "#FFFFFF" 
@@ -142,6 +142,8 @@ data_research_methods |>
                    },
                    "backgroundColor":"rgba(103, 66, 128, 0)",
                    "legend": {
+                   "top": "10%",
+                   "left": "0%",
                     "itemGap": 25,
                       "textStyle": {
                         "color": "#FFFFFF" 
@@ -198,6 +200,8 @@ data_hobbies |>
                    },
                    "backgroundColor":"rgba(255, 87, 51, 0)",
                    "legend": {
+                   "top": "10%",
+                   "left": "0%",
                     "itemGap": 25,
                       "textStyle": {
                         "color": "#FFFFFF" 
@@ -217,3 +221,4 @@ data_hobbies |>
   </div>
   </div>
 </div>
+

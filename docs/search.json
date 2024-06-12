@@ -18,7 +18,7 @@
     "href": "index.html",
     "title": "Welcome!",
     "section": "",
-    "text": "Welcome!\n\nJourney forth. Explore my portfolio to learn about my skills, experiences, and interests. Complete your quest by viewing each project. Reach out via LinkedIn or my resume contact information."
+    "text": "Welcome!\n\nJourney forth. Explore my portfolio to learn about my skills, experience, and interests. Complete your quest by viewing each project. Reach out via LinkedIn or my resume contact information."
   },
   {
     "objectID": "projectsList.html",
@@ -26,5 +26,47 @@
     "title": "Projects",
     "section": "",
     "text": "Project 1\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "\nCharacter Sheet\n",
+    "section": "",
+    "text": "Character Sheet\n\n\n\n\nSkills\n\n\n\nData analysis and visualization\n\n\nExperiment and survey design\n\n\nInterviewing\n\n\nRecruiting and scheduling\n\n\nSocial psychology\n\n\n\n\n\nSoftware & Languages\n\n\n\nR/RStudio\n\n\nExcel\n\n\nShiny & Quarto\n\n\nQualtrics\n\n\nYoucanbook.me\n\n\n\n\n\n\nEducation\n\n\nUniversity of Massachusetts Boston, Boston, MA\n\n\n\nGraduate Certificate in Survey Research: Dec 2023 & Expected, Ph D: Sociology, May 2025\n\n\n\nUniversity of North Carolina at Charlotte, Charlotte, NC\n\n\n\nMaster of Arts: Sociology, May 2020 & Bachelor of Arts: Sociology, May 2017\n\n\n\n\n\nExperience\n\n\nClinial Research Coordinator\n\n\n\nProgrammed R scripts using tidyverse to clean and transform complex data from REDCap for analysis. Produce descriptive statistics of twelve clinical sites for reports to stakeholders and principal investigators. Presented the reports at weekly leadership meetings.\n\n\nConducted in-depth psychiatric assessments of patients with schizophrenia using clinician rated instruments and software including PANSS, QLS, NIH Toolbox and WebCNP to rate cognitive, social, and community functioning.\n\n\nHelped design and maintain the Project SUCCESS open scholar website that was showcased by BIDMC’s Chief Academic Officer. Set up and maintained the project’s subscription audience in MailChimp.\n\n\n\nResearch Assistant\n\n\n\nConceptualized, developed, and tested a tool/application to measure subjective time. Designed in Figma, simulated in Netlogo, and developed in a Shiny R application connected to a MySQL database server.\n\n\nAnalyzed SurveyUSA and Elon University polling data to visualize descriptive statistics in preparation for a regional conference. Additionally, I computed a predictive multinomial regression model in R.\n\n\nCollaborated with a team to qualitatively code and analyze six-hundred news articles under a major time constraint.\n\n\nConducted semi-structured in-depth interviews to parse out cognition, culture, and structure of time in the workplace. Produced wordclouds in R to visualize qualitative information.\n\n\n\nLab Manager and Research Assistant\n\n\n\nCollected quantitative, acoustic, and interview data from three hundred experimental sessions.\n\n\nTrained a team of graduate and undergraduate students to conduct experimental sessions.\n\n\nScheduled a team of research assistants and three hundred participants for three coinciding experiments."
+  },
+  {
+    "objectID": "resume.html#skills",
+    "href": "resume.html#skills",
+    "title": "resume",
+    "section": "Skills",
+    "text": "Skills\n\nData analysis and visualization\nExperiment and survey design\nInterviewing\nRecruiting and scheduling\nSocial psychology"
+  },
+  {
+    "objectID": "resume.html#software-languages",
+    "href": "resume.html#software-languages",
+    "title": "resume",
+    "section": "",
+    "text": "R\n\nRStudio\nExcel\nSPSS\nQualtrics\nNetlogo\nGorilla Experiment Builder\nYoucanbook.me\n\n## Experience\n\nJob 1: Description\nJob 2: Description\n\n## Education\n\nDegree 1: Description\nDegree 2: Description"
+  },
+  {
+    "objectID": "resume.html#slide-title",
+    "href": "resume.html#slide-title",
+    "title": "resume",
+    "section": "Slide Title",
+    "text": "Slide Title\n\n\nHello"
+  },
+  {
+    "objectID": "resume.html#job-1",
+    "href": "resume.html#job-1",
+    "title": "resume",
+    "section": "Job 1",
+    "text": "Job 1\n\nblah\nblah"
+  },
+  {
+    "objectID": "resume.html#job-2",
+    "href": "resume.html#job-2",
+    "title": "resume",
+    "section": "Job 2",
+    "text": "Job 2\n\nblah\nblah"
   }
 ]
